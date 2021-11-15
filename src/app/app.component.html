@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<ul>
+  <li *ngFor="let item of products">
+    {{ item.title }}
+    <button (click)="addToCard(item)">ADD to Card</button>
+  </li>
+</ul>
+
+<app-card-items></app-card-items>
